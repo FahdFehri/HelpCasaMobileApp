@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic1"
+    tools:context=".activities.ClientRegisterActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+             >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="94dp"
+                android:layout_marginEnd="117dp"
+                android:gravity="center"
+                android:orientation="vertical"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="28dp"
+            android:alpha="0.86"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp"
+                android:layout_marginTop="0dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inscrivez-vous"
+                    android:textColor="@color/mauve"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Créer un nouveau compte en tant que client"
+                    android:alpha="0.7" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Civilité"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <RadioGroup
+                    android:id="@+id/rg_civilite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_mr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mr" />
+
+                    <RadioButton
+                        android:id="@+id/rb_melle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Melle" />
+
+                    <RadioButton
+                        android:id="@+id/rb_mm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mm" />
+
+                </RadioGroup>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/tv_nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="Nom"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_prenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prenom"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editPrenom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="Prenom"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <!-- Raison Sociale -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raison Sociale"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editRaisonSociale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Raison Sociale"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <!-- Adresse -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editAdresse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Adresse"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <!-- Ville -->
+                <TextView
+                    android:id="@+id/tv_ville"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ville"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_ville"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/gouvernorats_array"
+                    android:minHeight="48dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <!-- Code Postal -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Code Postal"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editCodePostal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Code Postal"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <!-- Téléphone Mobile -->
+                <TextView
+                    android:id="@+id/tv_tel_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Téléphone Mobile"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editTelMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Téléphone Mobile"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <!-- Téléphone Fixe -->
+                <TextView
+                    android:id="@+id/tv_tel_fixe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Téléphone Fixe"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editTelFixe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Téléphone Fixe"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <!-- E-mail -->
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="E-mail"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <!-- mdp -->
+                <TextView
+                    android:id="@+id/tv_mdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mot de passe"
+                    android:alpha="0.7"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editMdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Mot de passe"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/inscrireClientBtn"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_btn"
+                    android:text="S'INSCRIRE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:id="@+id/inscrireTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vous avez déja un compte ? Se connecter"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
